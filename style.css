@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body {
+    font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+h1 {
+    font-size: 24px;
+    color: white; 
+    text-align: left; 
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+}
+h2 {
+    font-size: 16px;
+    color: #484848;
+}
+h3 {
+    font-size:14px;
+    color: #484848;
+}
+p {
+    font-size:12px;
+}
+a {
+    text-decoration: none;
+    font-family: "Montserrat",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.page {
+    display: grid; 
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 400px 215px 530px 334px 424px 215px 363px;
+}
+/* Section1 */
+.banner {
+    background-image: url(./images/banner.jpg);
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+#logo {
+    align-items: left; 
+    margin: 20px; 
+}
+#logo i {
+    color: white;
+}
+.bannerText {
+    margin-left: 20%;
+/*     margin: 0px 230px;
+    padding: 0px 24px; */
+    display: flex;
+    flex-direction: column;
+/*     position: relative; */
+/*     width: 30%;
+    height: 10%; */
+    /*  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 126px 82px; */
+}
+/* #sect2 p {
+    font-size: 30px;
+} */
+.bannerText #button1 {
+    background-color: white; 
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(236, 233, 233);
+    border-radius: 5%;
+}
+.bannerText #button1 strong {
+    text-align: center;
+    font-size: 12px;
+    color: black;
+}
+.bannerText #button2 {
+    background: linear-gradient(to right, transparent, rgb(75, 71, 71)); 
+    width: 100%;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5%;
+}
+.bannerText #button2 strong {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+#sect1 { 
+    display: flex;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+}   
+#sect2 {
+    display: flex; 
+    flex-direction: row; 
+    align-items: left;; 
+}
+
+#sect2a {
+    display: flex;
+    flex-direction: column; 
+    padding:0px 12px; 
+}
+#sect2b {
+    display: flex;
+    flex-direction: column; 
+}
+#sect2 p {
+    color: white; 
+    font-size: 12px; 
+}
+
+/* SECTION 2 */
+.book {
+    grid-column: 2/3;
+    grid-row: 2/3;
+/*     padding-top: 20px; */
+    font-size: 10px;
+}
+
+/* Styling font of the form doesn't work */
+/* .sect3b {
+    font-family: "Montsserrat". 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form {
+    font-family: "Montsserrat". 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+.buttonsearch > button {
+    background:#FF5A5F;
+    color: white;
+    border: none;
+    border-radius: 5%; 
+    font-family: "montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    width: 100%;
+    height: 25px;
+    margin-top: 35px;
+}
+
+#sect3 {
+/*  margin-top: 2%;
+    margin-bottom: 2%; */
+    display: flex;
+    flex-direction: column;
+}
+#sect3a {
+    display: flex;
+    flex-direction: row;
+  /*   margin: 20px; */
+ /*    align-content: flex-end; */
+}
+.sect3b {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+/*     margin: 0 5px; */
+}
+
+/* SECTION 3 */
+.section {
+    grid-column: 2/3;
+    grid-row: 3/4; 
+}
+.sect4a {
+    display: flex;
+    flex-direction: column; 
+}
+.sect4a > p {
+    font-size: 10px;
+    color: #484848;
+}
+.sect4aa {
+    display: flex;
+    flex-direction:row;
+    font-size: 10px;
+}
+.sect4aa i {
+    color: rgba(240, 240, 112, 0.945);
+    margin-top: 10px;
+}
+
+.sect4b {
+    display: flex;
+    flex-direction: row; 
+  /*   flex-wrap:nowrap; */
+}
+.sect4bb {
+    display: flex;
+    flex-direction: column; 
+}
+.sect4bbb {
+    display: flex;
+    flex-direction: column; 
+    margin-right: 16px;
+}
+
+.checked {
+    color: #008489;
+    display: flex;
+    flex-direction: row;
+  }
+  .profile {
+      display: flex;
+      flex-direction: row;
+  }
+  .profile > img {
+/*       margin-top:5px; */
+      border-radius:50%;
+      margin-right: 5px;
+  }
+  .profile > p {
+      font-size:10px;
+  }
+.sect4bbb > p {
+font-size: 10px;
+}
+  }
+/* section4 */
+.travel {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.travelA {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+.travelB {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid lightgray;
+}
+.travelBb > p {
+    font-size: 10px;
+}
+.travelBb > strong {
+    color: rgb(71, 68, 68);
+}
+.travel i {
+    color: #008489;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/* section5 */
+.view {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+.viewB {
+    display: flex;
+    flex-direction: row;
+}
+.viewBb > strong {
+    font-size: 10px;
+    color: rgb(71, 68, 68);
+}
+.viewBb > p {
+    font-size: 10px;
+    color: rgb(71, 68, 68);
+}
+.view > a {
+    font-size: 12px;
+    color: #008489;
+}
+
+/* section6 */
+.when {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.when > button {
+    background-color: #008489;
+    width: 140px;
+    height: 23px;
+    color: white;
+   font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    border:none;
+    border-radius: 5%;
+    }
+    .when > p {
+        font-size: 10px;
+    }
+/* section7 */
+.footer {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    line-height:1;
+  /*   margin-top: 50px; */
+    padding-right: 30px; 
+    padding-bottom: 15px;
+    margin-right: 40px;
+    font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #484848;
+}
+.footer1a {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.footer1a > a {
+    color: rgb(71, 68, 68);
+}
+.footer  > p {
+    color: rgb(71, 68, 68);
+} 
+.footer1a #new {
+    background-color: #008489;
+    width:35px;
+    height: 12px;
+    font-size: 9px;
+    padding: 0 auto;
+    border-radius: 5%;
+}
+.footer1a p {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    border-radius: 5%;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+}
+.social i {
+    color: #7a7474;
+}
+/* section8 */
+.footnote {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid lightgray;
+}
+.footnote > i {
+    color: gray;
+  /*   margin-top: 5px */;
+    margin-right: 10px;
+    font-size:10px;
+}
+.footnote > p {
+    font-size: 8px;
+}
+
+/*Responsiveness, media query: put flex from rows to columns (container divs)*/
+@media only screen and (max-width: 600px) {
+    #sect2 {
+        display: flex; 
+        flex-direction: column; 
+    }
+    #sect3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .bannerText {
+        display: flex;
+        flex-direction: column;
+    }
+    #sect3a {
+        display: flex;
+        flex-direction: column;
+    }
+    #sect2a {
+        padding-left: 0;
+    }
+    .sect4b {
+        display: flex;
+        flex-direction: column;
+    }
+    .travelB {
+        display: flex;
+        flex-direction: column;
+    }
+    .viewB {
+            display: flex;
+            flex-direction: column;
+        }
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .footnote {
+        display: flex;
+        flex-direction: column;
+    }
+    .section {
+        margin-top:50% !important ;
+    }
+}
