@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* If we use Montserrat font */
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
 body {
-    font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+/*     font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */    
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+}
 h1 {
     font-size: 24px;
     color: white; 
@@ -21,18 +23,20 @@ p {
 }
 a {
     text-decoration: none;
-    font-family: "Montserrat",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
 }
 .page {
     display: grid; 
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 400px 215px 530px 334px 424px 215px 363px;
+ /*    grid-template-rows: 400px 215px 530px 334px 424px 215px 363px; */ 
+ /*  Giving grid sizes does NOT work - leaves gaps below! Instead I gave the banner height: 400px; */
 }
 /* Section1 */
 .banner {
     background-image: url(./images/banner.jpg);
     grid-column: 1/4;
     grid-row: 1/2;
+    height: 400px; /* give the banner height instead of giving grid exact dimensions */
 }
 #logo {
     align-items: left; 
@@ -128,7 +132,7 @@ form {
     color: white;
     border: none;
     border-radius: 5%; 
-    font-family: "montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
     font-size: 10px;
     width: 100%;
     height: 25px;
@@ -212,7 +216,6 @@ form {
 .sect4bbb > p {
 font-size: 10px;
 }
-  }
 /* section4 */
 .travel {
     grid-column: 2/3;
@@ -274,7 +277,7 @@ font-size: 10px;
     width: 140px;
     height: 23px;
     color: white;
-   font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
     font-size: 10px;
     border:none;
     border-radius: 5%;
@@ -285,7 +288,7 @@ font-size: 10px;
 /* section7 */
 .footer {
     grid-column: 2/3;
-    grid-row: 7/8;
+    grid-row: 7/7;
 }
 .footer1 {
     display: flex;
@@ -295,7 +298,7 @@ font-size: 10px;
     padding-right: 30px; 
     padding-bottom: 15px;
     margin-right: 40px;
-    font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
     font-size: 10px;
     line-height: 1.5;
     color: #484848;
@@ -334,17 +337,22 @@ font-size: 10px;
 .social i {
     color: #7a7474;
 }
-/* section8 */
 .footnote {
     display: flex;
     flex-direction: row;
     border-top: 1px solid lightgray;
 }
+.footnoteA {
+    display: flex;
+    flex-direction: row;
+}
 .footnote > i {
-    color: gray;
+    color: rgb(71, 68, 68);
   /*   margin-top: 5px */;
     margin-right: 10px;
-    font-size:10px;
+ /*    font-size: 8px; */ /* Size does NOT work! */
+    height:8px;
+    width: 8px;
 }
 .footnote > p {
     font-size: 8px;
@@ -387,9 +395,13 @@ font-size: 10px;
         display: flex;
         flex-direction: column;
     }
-    .footnote {
+/*     .footnote {
         display: flex;
         flex-direction: column;
+    } */
+    .footnoteA {
+        display: flex;
+        flex-direction: row;
     }
     .section {
         margin-top:50% !important ;
