@@ -28,7 +28,7 @@ a {
 .page {
     display: grid; 
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 400px 215px 530px 334px 424px 215px 363px; 
+/*     grid-template-rows: 400px 215px 530px 334px 424px 215px 363px;  */
  /*  Giving grid sizes does NOT work - leaves gaps below! Instead I gave the banner height: 400px; */
 }
 /* Section1 */
