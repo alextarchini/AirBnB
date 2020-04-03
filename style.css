@@ -408,7 +408,7 @@ font-size: 10px;
     }
     
     #button1 {
-        overflow: hidden;
+        display:none;
     }
     #button2 {
         display:none;
