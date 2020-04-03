@@ -406,4 +406,12 @@ font-size: 10px;
     .section {
         margin-top:50% !important ;
     }
+    
+    #button1 {
+        display:none;
+    }
+    #button2 {
+        display:none;
+    }
+    
 }
